@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Frameworks/WICrewKit/WICrewKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WIMapsKit/WIMapsKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WITankopediaKit/WITankopediaKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WIAccountKit/WIAccountKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WIWargamingIDKit/WIWargamingIDKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WICoreKit/WICoreKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/WICoreUIKit/WICoreUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WoT Inspector.xcodeproj">
+   </FileRef>
+</Workspace>

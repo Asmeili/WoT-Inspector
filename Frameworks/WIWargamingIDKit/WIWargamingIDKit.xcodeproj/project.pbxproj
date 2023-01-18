@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3BD755293BBBAE0028CB14 /* WIWargamingIDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3BD754293BBBAE0028CB14 /* WIWargamingIDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D3BD762293BBBDD0028CB14 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD761293BBBDD0028CB14 /* AuthenticateViewController.swift */; };
+		4D3BD764293BBBF60028CB14 /* AuthenticateView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3BD763293BBBF60028CB14 /* AuthenticateView.storyboard */; };
+		4D3BD766293BBC0B0028CB14 /* WIWargamingIDKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD765293BBC0B0028CB14 /* WIWargamingIDKit.swift */; };
+		4D3BD76C293BBE7B0028CB14 /* WargamingIDHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3BD76B293BBE7B0028CB14 /* WargamingIDHomeCell.xib */; };
+		4D3BD76E293BBE820028CB14 /* WargamingIDHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD76D293BBE820028CB14 /* WargamingIDHomeCell.swift */; };
+		4D3BD770293BBEDB0028CB14 /* WargamingIDHomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD76F293BBEDB0028CB14 /* WargamingIDHomeCellViewModel.swift */; };
+		4D3BD785293BC9940028CB14 /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD784293BC9940028CB14 /* AuthenticateViewModel.swift */; };
+		4D3BD791293BD0820028CB14 /* AuthenticateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BD790293BD0820028CB14 /* AuthenticateService.swift */; };
+		4D9909FF2940D02400DFE2D1 /* WICoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9909FE2940D02400DFE2D1 /* WICoreKit.framework */; };
+		4D990A002940D02400DFE2D1 /* WICoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9909FE2940D02400DFE2D1 /* WICoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D990A032940D02600DFE2D1 /* WICoreUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D990A022940D02600DFE2D1 /* WICoreUIKit.framework */; };
+		4D990A042940D02600DFE2D1 /* WICoreUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D990A022940D02600DFE2D1 /* WICoreUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D990A052940D02900DFE2D1 /* WIAccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D18E6E9293BF115008BC1D5 /* WIAccountKit.framework */; };
+		4D990A062940D02900DFE2D1 /* WIAccountKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D18E6E9293BF115008BC1D5 /* WIAccountKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DA982C6293BD3FA00B4F168 /* AuthenticationURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA982C5293BD3FA00B4F168 /* AuthenticationURLResponse.swift */; };
+		4DA982CC293BE7D700B4F168 /* AuthenticateViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA982CB293BE7D700B4F168 /* AuthenticateViewController+WKNavigationDelegate.swift */; };
+		4DA982F0293BECBC00B4F168 /* WargamingID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA982EF293BECBC00B4F168 /* WargamingID.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D990A012940D02400DFE2D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D990A062940D02900DFE2D1 /* WIAccountKit.framework in Embed Frameworks */,
+				4D990A042940D02600DFE2D1 /* WICoreUIKit.framework in Embed Frameworks */,
+				4D990A002940D02400DFE2D1 /* WICoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D18E6E9293BF115008BC1D5 /* WIAccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WIAccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3BD751293BBBAE0028CB14 /* WIWargamingIDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIWargamingIDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3BD754293BBBAE0028CB14 /* WIWargamingIDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIWargamingIDKit.h; sourceTree = "<group>"; };
+		4D3BD761293BBBDD0028CB14 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
+		4D3BD763293BBBF60028CB14 /* AuthenticateView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthenticateView.storyboard; sourceTree = "<group>"; };
+		4D3BD765293BBC0B0028CB14 /* WIWargamingIDKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIWargamingIDKit.swift; sourceTree = "<group>"; };
+		4D3BD76B293BBE7B0028CB14 /* WargamingIDHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WargamingIDHomeCell.xib; sourceTree = "<group>"; };
+		4D3BD76D293BBE820028CB14 /* WargamingIDHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WargamingIDHomeCell.swift; sourceTree = "<group>"; };
+		4D3BD76F293BBEDB0028CB14 /* WargamingIDHomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WargamingIDHomeCellViewModel.swift; sourceTree = "<group>"; };
+		4D3BD784293BC9940028CB14 /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModel.swift; sourceTree = "<group>"; };
+		4D3BD790293BD0820028CB14 /* AuthenticateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateService.swift; sourceTree = "<group>"; };
+		4D9909FE2940D02400DFE2D1 /* WICoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WICoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D990A022940D02600DFE2D1 /* WICoreUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WICoreUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA982C5293BD3FA00B4F168 /* AuthenticationURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationURLResponse.swift; sourceTree = "<group>"; };
+		4DA982CB293BE7D700B4F168 /* AuthenticateViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticateViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
+		4DA982EF293BECBC00B4F168 /* WargamingID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WargamingID.swift; sourceTree = "<group>"; };
+		4DCB2B72293BF18C0066336F /* WIAccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WIAccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D3BD74E293BBBAE0028CB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D990A052940D02900DFE2D1 /* WIAccountKit.framework in Frameworks */,
+				4D990A032940D02600DFE2D1 /* WICoreUIKit.framework in Frameworks */,
+				4D9909FF2940D02400DFE2D1 /* WICoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D18E6E8293BF115008BC1D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A022940D02600DFE2D1 /* WICoreUIKit.framework */,
+				4D9909FE2940D02400DFE2D1 /* WICoreKit.framework */,
+				4DCB2B72293BF18C0066336F /* WIAccountKit.framework */,
+				4D18E6E9293BF115008BC1D5 /* WIAccountKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D3BD747293BBBAE0028CB14 = {
+			isa = PBXGroup;
+			children = (
+				4D3BD753293BBBAE0028CB14 /* WIWargamingIDKit */,
+				4D3BD752293BBBAE0028CB14 /* Products */,
+				4D18E6E8293BF115008BC1D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D3BD752293BBBAE0028CB14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BD751293BBBAE0028CB14 /* WIWargamingIDKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D3BD753293BBBAE0028CB14 /* WIWargamingIDKit */ = {
+			isa = PBXGroup;
+			children = (
+				4DA982C4293BD3F200B4F168 /* Models */,
+				4D3BD78F293BD0550028CB14 /* Network */,
+				4D3BD778293BBF3A0028CB14 /* Views */,
+				4D3BD754293BBBAE0028CB14 /* WIWargamingIDKit.h */,
+				4D3BD765293BBC0B0028CB14 /* WIWargamingIDKit.swift */,
+			);
+			path = WIWargamingIDKit;
+			sourceTree = "<group>";
+		};
+		4D3BD75F293BBBD10028CB14 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BD763293BBBF60028CB14 /* AuthenticateView.storyboard */,
+				4DA982CB293BE7D700B4F168 /* AuthenticateViewController+WKNavigationDelegate.swift */,
+				4D3BD761293BBBDD0028CB14 /* AuthenticateViewController.swift */,
+				4D3BD784293BC9940028CB14 /* AuthenticateViewModel.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		4D3BD76A293BBE680028CB14 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BD76D293BBE820028CB14 /* WargamingIDHomeCell.swift */,
+				4D3BD76B293BBE7B0028CB14 /* WargamingIDHomeCell.xib */,
+				4D3BD76F293BBEDB0028CB14 /* WargamingIDHomeCellViewModel.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		4D3BD778293BBF3A0028CB14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BD75F293BBBD10028CB14 /* Authenticate */,
+				4D3BD76A293BBE680028CB14 /* HomeCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D3BD78F293BD0550028CB14 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BD790293BD0820028CB14 /* AuthenticateService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DA982C4293BD3F200B4F168 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DA982C5293BD3FA00B4F168 /* AuthenticationURLResponse.swift */,
+				4DA982EF293BECBC00B4F168 /* WargamingID.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D3BD74C293BBBAE0028CB14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3BD755293BBBAE0028CB14 /* WIWargamingIDKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D3BD750293BBBAE0028CB14 /* WIWargamingIDKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3BD758293BBBAE0028CB14 /* Build configuration list for PBXNativeTarget "WIWargamingIDKit" */;
+			buildPhases = (
+				4D3BD74C293BBBAE0028CB14 /* Headers */,
+				4D3BD74D293BBBAE0028CB14 /* Sources */,
+				4D3BD74E293BBBAE0028CB14 /* Frameworks */,
+				4D3BD74F293BBBAE0028CB14 /* Resources */,
+				4D990A012940D02400DFE2D1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WIWargamingIDKit;
+			productName = WIWargamingIDKit;
+			productReference = 4D3BD751293BBBAE0028CB14 /* WIWargamingIDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D3BD748293BBBAE0028CB14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4D3BD750293BBBAE0028CB14 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 4D3BD74B293BBBAE0028CB14 /* Build configuration list for PBXProject "WIWargamingIDKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D3BD747293BBBAE0028CB14;
+			productRefGroup = 4D3BD752293BBBAE0028CB14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D3BD750293BBBAE0028CB14 /* WIWargamingIDKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D3BD74F293BBBAE0028CB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3BD764293BBBF60028CB14 /* AuthenticateView.storyboard in Resources */,
+				4D3BD76C293BBE7B0028CB14 /* WargamingIDHomeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D3BD74D293BBBAE0028CB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3BD770293BBEDB0028CB14 /* WargamingIDHomeCellViewModel.swift in Sources */,
+				4DA982C6293BD3FA00B4F168 /* AuthenticationURLResponse.swift in Sources */,
+				4D3BD791293BD0820028CB14 /* AuthenticateService.swift in Sources */,
+				4D3BD785293BC9940028CB14 /* AuthenticateViewModel.swift in Sources */,
+				4D3BD76E293BBE820028CB14 /* WargamingIDHomeCell.swift in Sources */,
+				4D3BD762293BBBDD0028CB14 /* AuthenticateViewController.swift in Sources */,
+				4DA982CC293BE7D700B4F168 /* AuthenticateViewController+WKNavigationDelegate.swift in Sources */,
+				4D3BD766293BBC0B0028CB14 /* WIWargamingIDKit.swift in Sources */,
+				4DA982F0293BECBC00B4F168 /* WargamingID.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D3BD756293BBBAE0028CB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D3BD757293BBBAE0028CB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D3BD759293BBBAE0028CB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P957785596;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artes.WIWargamingIDKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D3BD75A293BBBAE0028CB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P957785596;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artes.WIWargamingIDKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D3BD74B293BBBAE0028CB14 /* Build configuration list for PBXProject "WIWargamingIDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3BD756293BBBAE0028CB14 /* Debug */,
+				4D3BD757293BBBAE0028CB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3BD758293BBBAE0028CB14 /* Build configuration list for PBXNativeTarget "WIWargamingIDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3BD759293BBBAE0028CB14 /* Debug */,
+				4D3BD75A293BBBAE0028CB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D3BD748293BBBAE0028CB14 /* Project object */;
+}

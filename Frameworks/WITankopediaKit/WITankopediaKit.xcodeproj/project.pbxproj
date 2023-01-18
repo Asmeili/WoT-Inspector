@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D07A96F293F477300794348 /* DiscoverSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07A96E293F477300794348 /* DiscoverSection.swift */; };
+		4D07A971293F479200794348 /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07A970293F479200794348 /* DiscoverItem.swift */; };
+		4D07A973293F47E200794348 /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07A972293F47E200794348 /* DiscoverCell.swift */; };
+		4D07A976293F496000794348 /* DiscoverChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07A975293F496000794348 /* DiscoverChipCell.swift */; };
+		4D07A978293F498200794348 /* DiscoverChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D07A977293F498200794348 /* DiscoverChipCell.xib */; };
+		4D2FFCE1293F543600FB0A98 /* TankopediaDiscoverViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FFCE0293F543600FB0A98 /* TankopediaDiscoverViewController+UICollectionViewDelegate.swift */; };
+		4D2FFCE3293F5CC800FB0A98 /* DiscoverVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FFCE2293F5CC800FB0A98 /* DiscoverVehicleCell.swift */; };
+		4D2FFCE5293F5CD100FB0A98 /* DiscoverVehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FFCE4293F5CD100FB0A98 /* DiscoverVehicleCell.xib */; };
+		4D3742F6293E3401006BC562 /* TankopediaDiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3742F5293E3401006BC562 /* TankopediaDiscoverViewModel.swift */; };
+		4D3742F8293E3437006BC562 /* TankopediaDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3742F7293E3437006BC562 /* TankopediaDiscoverViewController.swift */; };
+		4D3A5A8A29410A8D00BB4981 /* SuspensionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A5A8929410A8D00BB4981 /* SuspensionDetailsViewModel.swift */; };
+		4D3A5A8C29410B2200BB4981 /* SuspensionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A5A8B29410B2200BB4981 /* SuspensionDetailsViewController.swift */; };
+		4D3A5A8E29410BDF00BB4981 /* SuspensionDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3A5A8D29410BDF00BB4981 /* SuspensionDetailsView.storyboard */; };
+		4D3A5A91294111F600BB4981 /* TurretDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A5A90294111F600BB4981 /* TurretDetailsViewModel.swift */; };
+		4D3A5A932941127E00BB4981 /* TurretDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A5A922941127E00BB4981 /* TurretDetailsViewController.swift */; };
+		4D3A5A952941135100BB4981 /* TurretDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3A5A942941135100BB4981 /* TurretDetailsView.storyboard */; };
+		4D9909F32940D01000DFE2D1 /* WICoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE83CE2940CF3F00B3ECD3 /* WICoreKit.framework */; };
+		4D9909F42940D01000DFE2D1 /* WICoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE83CE2940CF3F00B3ECD3 /* WICoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D9909F62940D01200DFE2D1 /* WICoreUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE83D22940CF7600B3ECD3 /* WICoreUIKit.framework */; };
+		4D9909F72940D01200DFE2D1 /* WICoreUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE83D22940CF7600B3ECD3 /* WICoreUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D990A0A2940D08400DFE2D1 /* AmmoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A092940D08400DFE2D1 /* AmmoDetailsViewModel.swift */; };
+		4D990A0C2940D18E00DFE2D1 /* AmmoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A0B2940D18E00DFE2D1 /* AmmoDetailsViewController.swift */; };
+		4D990A0E2940D1D600DFE2D1 /* AmmoDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D990A0D2940D1D600DFE2D1 /* AmmoDetailsView.storyboard */; };
+		4D990A132940D4BB00DFE2D1 /* ArmorDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A122940D4BB00DFE2D1 /* ArmorDetailsViewModel.swift */; };
+		4D990A152940D59300DFE2D1 /* ArmorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A142940D59300DFE2D1 /* ArmorDetailsViewController.swift */; };
+		4D990A172940D5E900DFE2D1 /* ArmorDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D990A162940D5E900DFE2D1 /* ArmorDetailsView.storyboard */; };
+		4D990A1A2940D6C500DFE2D1 /* EngineDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A192940D6C500DFE2D1 /* EngineDetailsViewModel.swift */; };
+		4D990A1C2940D71900DFE2D1 /* EngineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A1B2940D71900DFE2D1 /* EngineDetailsViewController.swift */; };
+		4D990A1E2940D75700DFE2D1 /* EngineDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D990A1D2940D75700DFE2D1 /* EngineDetailsView.storyboard */; };
+		4D990A212940D96C00DFE2D1 /* GunDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A202940D96C00DFE2D1 /* GunDetailsViewModel.swift */; };
+		4D990A232940D9AC00DFE2D1 /* GunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A222940D9AC00DFE2D1 /* GunDetailsViewController.swift */; };
+		4D990A252940DA0B00DFE2D1 /* GunDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D990A242940DA0B00DFE2D1 /* GunDetailsView.storyboard */; };
+		4D990A282940DDB500DFE2D1 /* RadioDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A272940DDB500DFE2D1 /* RadioDetailsViewModel.swift */; };
+		4D990A2A2940DDFA00DFE2D1 /* RadioDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D990A292940DDFA00DFE2D1 /* RadioDetailsViewController.swift */; };
+		4D990A2C2940DE6F00DFE2D1 /* RadioDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D990A2B2940DE6F00DFE2D1 /* RadioDetailsView.storyboard */; };
+		4DA1F63D2941E0B500150F2C /* Provision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1F63C2941E0B500150F2C /* Provision.swift */; };
+		4DA1F6422941EABD00150F2C /* ProvisionsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1F6412941EABD00150F2C /* ProvisionsDetailsViewModel.swift */; };
+		4DA1F6442941EB4800150F2C /* ProvisionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1F6432941EB4800150F2C /* ProvisionsDetailsViewController.swift */; };
+		4DA1F6462941EB9500150F2C /* ProvisionsDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1F6452941EB9500150F2C /* ProvisionsDetailsView.storyboard */; };
+		4DA1F6492941FCE800150F2C /* ProvisionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1F6482941FCE800150F2C /* ProvisionDetailsViewModel.swift */; };
+		4DA1F64B2941FD1800150F2C /* ProvisionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1F64A2941FD1800150F2C /* ProvisionDetailsViewController.swift */; };
+		4DA1F64D2941FD8E00150F2C /* ProvisionDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1F64C2941FD8E00150F2C /* ProvisionDetailsView.storyboard */; };
+		4DB86A2A293D17E50044F7FB /* WITankopediaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB86A29293D17E50044F7FB /* WITankopediaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DB86A33293D18140044F7FB /* WITankopediaKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB86A32293D18140044F7FB /* WITankopediaKit.swift */; };
+		4DB86A38293D18910044F7FB /* TankopediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB86A37293D18910044F7FB /* TankopediaService.swift */; };
+		4DB86A44293D1CCA0044F7FB /* TankopediaInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB86A43293D1CCA0044F7FB /* TankopediaInformation.swift */; };
+		4DC9C5BC293D353600A69D1E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9C5BB293D353600A69D1E /* Vehicle.swift */; };
+		4DE3633C29411B4500E99601 /* SiegeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3633B29411B4500E99601 /* SiegeDetailsViewModel.swift */; };
+		4DE3633E29411B8600E99601 /* SiegeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3633D29411B8600E99601 /* SiegeDetailsViewController.swift */; };
+		4DE3634029411BE400E99601 /* SiegeDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE3633F29411BE400E99601 /* SiegeDetailsView.storyboard */; };
+		4DE3634329411D6D00E99601 /* RapidDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3634229411D6D00E99601 /* RapidDetailsViewModel.swift */; };
+		4DE3634529411D9600E99601 /* RapidDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3634429411D9600E99601 /* RapidDetailsViewController.swift */; };
+		4DE3634729411DE500E99601 /* RapidDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE3634629411DE500E99601 /* RapidDetailsView.storyboard */; };
+		4DE3634A2941229C00E99601 /* CrewDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE363492941229C00E99601 /* CrewDetailsViewModel.swift */; };
+		4DE3634C294122E000E99601 /* CrewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3634B294122E000E99601 /* CrewDetailsViewController.swift */; };
+		4DE3634E2941233600E99601 /* CrewDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE3634D2941233600E99601 /* CrewDetailsView.storyboard */; };
+		4DE363522941288A00E99601 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE363512941288A00E99601 /* Module.swift */; };
+		4DE3635429412A1E00E99601 /* ModuleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3635329412A1E00E99601 /* ModuleDetailsViewModel.swift */; };
+		4DE3635729412B1500E99601 /* ModulesDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3635629412B1500E99601 /* ModulesDetailsViewModel.swift */; };
+		4DE3635929412BE800E99601 /* ModulesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3635829412BE700E99601 /* ModulesDetailsViewController.swift */; };
+		4DE3635B29412C4600E99601 /* ModulesDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE3635A29412C4600E99601 /* ModulesDetailsView.storyboard */; };
+		4DE3635D29412E8C00E99601 /* ModuleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3635C29412E8C00E99601 /* ModuleDetailsViewController.swift */; };
+		4DE3635F29412F0D00E99601 /* ModuleDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE3635E29412F0D00E99601 /* ModuleDetailsView.storyboard */; };
+		4DEE83C129409D3200B3ECD3 /* VehicleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE83C029409D3200B3ECD3 /* VehicleDetailsViewModel.swift */; };
+		4DEE83C329409EDC00B3ECD3 /* VehicleDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE83C229409EDC00B3ECD3 /* VehicleDetailsView.storyboard */; };
+		4DEE83C529409EE300B3ECD3 /* VehicleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE83C429409EE300B3ECD3 /* VehicleDetailsViewController.swift */; };
+		4DEE83CA2940C38700B3ECD3 /* DetailsIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE83C92940C38700B3ECD3 /* DetailsIconCell.swift */; };
+		4DEE83CC2940C3BB00B3ECD3 /* DetailsIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE83CB2940C3BB00B3ECD3 /* DetailsIconCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D9909F52940D01000DFE2D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D9909F72940D01200DFE2D1 /* WICoreUIKit.framework in Embed Frameworks */,
+				4D9909F42940D01000DFE2D1 /* WICoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D07A96E293F477300794348 /* DiscoverSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverSection.swift; sourceTree = "<group>"; };
+		4D07A970293F479200794348 /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
+		4D07A972293F47E200794348 /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
+		4D07A975293F496000794348 /* DiscoverChipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverChipCell.swift; sourceTree = "<group>"; };
+		4D07A977293F498200794348 /* DiscoverChipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverChipCell.xib; sourceTree = "<group>"; };
+		4D2FFCE0293F543600FB0A98 /* TankopediaDiscoverViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TankopediaDiscoverViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		4D2FFCE2293F5CC800FB0A98 /* DiscoverVehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVehicleCell.swift; sourceTree = "<group>"; };
+		4D2FFCE4293F5CD100FB0A98 /* DiscoverVehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverVehicleCell.xib; sourceTree = "<group>"; };
+		4D3742F5293E3401006BC562 /* TankopediaDiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankopediaDiscoverViewModel.swift; sourceTree = "<group>"; };
+		4D3742F7293E3437006BC562 /* TankopediaDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankopediaDiscoverViewController.swift; sourceTree = "<group>"; };
+		4D3A5A8929410A8D00BB4981 /* SuspensionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspensionDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D3A5A8B29410B2200BB4981 /* SuspensionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspensionDetailsViewController.swift; sourceTree = "<group>"; };
+		4D3A5A8D29410BDF00BB4981 /* SuspensionDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuspensionDetailsView.storyboard; sourceTree = "<group>"; };
+		4D3A5A90294111F600BB4981 /* TurretDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurretDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D3A5A922941127E00BB4981 /* TurretDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurretDetailsViewController.swift; sourceTree = "<group>"; };
+		4D3A5A942941135100BB4981 /* TurretDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TurretDetailsView.storyboard; sourceTree = "<group>"; };
+		4D990A092940D08400DFE2D1 /* AmmoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D990A0B2940D18E00DFE2D1 /* AmmoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoDetailsViewController.swift; sourceTree = "<group>"; };
+		4D990A0D2940D1D600DFE2D1 /* AmmoDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AmmoDetailsView.storyboard; sourceTree = "<group>"; };
+		4D990A122940D4BB00DFE2D1 /* ArmorDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D990A142940D59300DFE2D1 /* ArmorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorDetailsViewController.swift; sourceTree = "<group>"; };
+		4D990A162940D5E900DFE2D1 /* ArmorDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArmorDetailsView.storyboard; sourceTree = "<group>"; };
+		4D990A192940D6C500DFE2D1 /* EngineDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D990A1B2940D71900DFE2D1 /* EngineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineDetailsViewController.swift; sourceTree = "<group>"; };
+		4D990A1D2940D75700DFE2D1 /* EngineDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EngineDetailsView.storyboard; sourceTree = "<group>"; };
+		4D990A202940D96C00DFE2D1 /* GunDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D990A222940D9AC00DFE2D1 /* GunDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunDetailsViewController.swift; sourceTree = "<group>"; };
+		4D990A242940DA0B00DFE2D1 /* GunDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GunDetailsView.storyboard; sourceTree = "<group>"; };
+		4D990A272940DDB500DFE2D1 /* RadioDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D990A292940DDFA00DFE2D1 /* RadioDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioDetailsViewController.swift; sourceTree = "<group>"; };
+		4D990A2B2940DE6F00DFE2D1 /* RadioDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RadioDetailsView.storyboard; sourceTree = "<group>"; };
+		4DA1F63C2941E0B500150F2C /* Provision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provision.swift; sourceTree = "<group>"; };
+		4DA1F6412941EABD00150F2C /* ProvisionsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionsDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DA1F6432941EB4800150F2C /* ProvisionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionsDetailsViewController.swift; sourceTree = "<group>"; };
+		4DA1F6452941EB9500150F2C /* ProvisionsDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProvisionsDetailsView.storyboard; sourceTree = "<group>"; };
+		4DA1F6482941FCE800150F2C /* ProvisionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DA1F64A2941FD1800150F2C /* ProvisionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionDetailsViewController.swift; sourceTree = "<group>"; };
+		4DA1F64C2941FD8E00150F2C /* ProvisionDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProvisionDetailsView.storyboard; sourceTree = "<group>"; };
+		4DB86A26293D17E50044F7FB /* WITankopediaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WITankopediaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB86A29293D17E50044F7FB /* WITankopediaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WITankopediaKit.h; sourceTree = "<group>"; };
+		4DB86A32293D18140044F7FB /* WITankopediaKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WITankopediaKit.swift; sourceTree = "<group>"; };
+		4DB86A37293D18910044F7FB /* TankopediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankopediaService.swift; sourceTree = "<group>"; };
+		4DB86A43293D1CCA0044F7FB /* TankopediaInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankopediaInformation.swift; sourceTree = "<group>"; };
+		4DC9C5BB293D353600A69D1E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		4DE3633B29411B4500E99601 /* SiegeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiegeDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DE3633D29411B8600E99601 /* SiegeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiegeDetailsViewController.swift; sourceTree = "<group>"; };
+		4DE3633F29411BE400E99601 /* SiegeDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SiegeDetailsView.storyboard; sourceTree = "<group>"; };
+		4DE3634229411D6D00E99601 /* RapidDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DE3634429411D9600E99601 /* RapidDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDetailsViewController.swift; sourceTree = "<group>"; };
+		4DE3634629411DE500E99601 /* RapidDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RapidDetailsView.storyboard; sourceTree = "<group>"; };
+		4DE363492941229C00E99601 /* CrewDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DE3634B294122E000E99601 /* CrewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewDetailsViewController.swift; sourceTree = "<group>"; };
+		4DE3634D2941233600E99601 /* CrewDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CrewDetailsView.storyboard; sourceTree = "<group>"; };
+		4DE363512941288A00E99601 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		4DE3635329412A1E00E99601 /* ModuleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DE3635629412B1500E99601 /* ModulesDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DE3635829412BE700E99601 /* ModulesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesDetailsViewController.swift; sourceTree = "<group>"; };
+		4DE3635A29412C4600E99601 /* ModulesDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModulesDetailsView.storyboard; sourceTree = "<group>"; };
+		4DE3635C29412E8C00E99601 /* ModuleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetailsViewController.swift; sourceTree = "<group>"; };
+		4DE3635E29412F0D00E99601 /* ModuleDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModuleDetailsView.storyboard; sourceTree = "<group>"; };
+		4DEE83C029409D3200B3ECD3 /* VehicleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsViewModel.swift; sourceTree = "<group>"; };
+		4DEE83C229409EDC00B3ECD3 /* VehicleDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleDetailsView.storyboard; sourceTree = "<group>"; };
+		4DEE83C429409EE300B3ECD3 /* VehicleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsViewController.swift; sourceTree = "<group>"; };
+		4DEE83C92940C38700B3ECD3 /* DetailsIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsIconCell.swift; sourceTree = "<group>"; };
+		4DEE83CB2940C3BB00B3ECD3 /* DetailsIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsIconCell.xib; sourceTree = "<group>"; };
+		4DEE83CE2940CF3F00B3ECD3 /* WICoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WICoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEE83D22940CF7600B3ECD3 /* WICoreUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WICoreUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DB86A23293D17E50044F7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9909F62940D01200DFE2D1 /* WICoreUIKit.framework in Frameworks */,
+				4D9909F32940D01000DFE2D1 /* WICoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D07A974293F495800794348 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D07A977293F498200794348 /* DiscoverChipCell.xib */,
+				4D07A975293F496000794348 /* DiscoverChipCell.swift */,
+				4D2FFCE4293F5CD100FB0A98 /* DiscoverVehicleCell.xib */,
+				4D2FFCE2293F5CC800FB0A98 /* DiscoverVehicleCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4D3A5A8829410A7D00BB4981 /* Suspension */ = {
+			isa = PBXGroup;
+			children = (
+				4D3A5A8D29410BDF00BB4981 /* SuspensionDetailsView.storyboard */,
+				4D3A5A8B29410B2200BB4981 /* SuspensionDetailsViewController.swift */,
+				4D3A5A8929410A8D00BB4981 /* SuspensionDetailsViewModel.swift */,
+			);
+			path = Suspension;
+			sourceTree = "<group>";
+		};
+		4D3A5A8F29410FEB00BB4981 /* Turret */ = {
+			isa = PBXGroup;
+			children = (
+				4D3A5A942941135100BB4981 /* TurretDetailsView.storyboard */,
+				4D3A5A922941127E00BB4981 /* TurretDetailsViewController.swift */,
+				4D3A5A90294111F600BB4981 /* TurretDetailsViewModel.swift */,
+			);
+			path = Turret;
+			sourceTree = "<group>";
+		};
+		4D990A072940D05B00DFE2D1 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE83C82940C37800B3ECD3 /* Cells */,
+				4DEE83C229409EDC00B3ECD3 /* VehicleDetailsView.storyboard */,
+				4DEE83C429409EE300B3ECD3 /* VehicleDetailsViewController.swift */,
+				4DEE83C029409D3200B3ECD3 /* VehicleDetailsViewModel.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		4D990A082940D07B00DFE2D1 /* Ammo */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A0D2940D1D600DFE2D1 /* AmmoDetailsView.storyboard */,
+				4D990A0B2940D18E00DFE2D1 /* AmmoDetailsViewController.swift */,
+				4D990A092940D08400DFE2D1 /* AmmoDetailsViewModel.swift */,
+			);
+			path = Ammo;
+			sourceTree = "<group>";
+		};
+		4D990A112940D48100DFE2D1 /* Armor */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A162940D5E900DFE2D1 /* ArmorDetailsView.storyboard */,
+				4D990A142940D59300DFE2D1 /* ArmorDetailsViewController.swift */,
+				4D990A122940D4BB00DFE2D1 /* ArmorDetailsViewModel.swift */,
+			);
+			path = Armor;
+			sourceTree = "<group>";
+		};
+		4D990A182940D6B900DFE2D1 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A1D2940D75700DFE2D1 /* EngineDetailsView.storyboard */,
+				4D990A1B2940D71900DFE2D1 /* EngineDetailsViewController.swift */,
+				4D990A192940D6C500DFE2D1 /* EngineDetailsViewModel.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		4D990A1F2940D96200DFE2D1 /* Gun */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A242940DA0B00DFE2D1 /* GunDetailsView.storyboard */,
+				4D990A222940D9AC00DFE2D1 /* GunDetailsViewController.swift */,
+				4D990A202940D96C00DFE2D1 /* GunDetailsViewModel.swift */,
+			);
+			path = Gun;
+			sourceTree = "<group>";
+		};
+		4D990A262940DDA500DFE2D1 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A2B2940DE6F00DFE2D1 /* RadioDetailsView.storyboard */,
+				4D990A292940DDFA00DFE2D1 /* RadioDetailsViewController.swift */,
+				4D990A272940DDB500DFE2D1 /* RadioDetailsViewModel.swift */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		4DA1F6472941FCD700150F2C /* Provision */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1F64C2941FD8E00150F2C /* ProvisionDetailsView.storyboard */,
+				4DA1F64A2941FD1800150F2C /* ProvisionDetailsViewController.swift */,
+				4DA1F6482941FCE800150F2C /* ProvisionDetailsViewModel.swift */,
+			);
+			path = Provision;
+			sourceTree = "<group>";
+		};
+		4DB86A1C293D17E50044F7FB = {
+			isa = PBXGroup;
+			children = (
+				4DB86A28293D17E50044F7FB /* WITankopediaKit */,
+				4DB86A27293D17E50044F7FB /* Products */,
+				4DEE83CD2940CF3F00B3ECD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DB86A27293D17E50044F7FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DB86A26293D17E50044F7FB /* WITankopediaKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DB86A28293D17E50044F7FB /* WITankopediaKit */ = {
+			isa = PBXGroup;
+			children = (
+				4DB86A35293D18840044F7FB /* Models */,
+				4DB86A36293D18870044F7FB /* Network */,
+				4DB86A34293D18800044F7FB /* Views */,
+				4DB86A29293D17E50044F7FB /* WITankopediaKit.h */,
+				4DB86A32293D18140044F7FB /* WITankopediaKit.swift */,
+			);
+			path = WITankopediaKit;
+			sourceTree = "<group>";
+		};
+		4DB86A34293D18800044F7FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEE02C293F8E8800DE7589 /* Details */,
+				4DB86A39293D19C60044F7FB /* Discover */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DB86A35293D18840044F7FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DB86A43293D1CCA0044F7FB /* TankopediaInformation.swift */,
+				4DC9C5BB293D353600A69D1E /* Vehicle.swift */,
+				4DE363512941288A00E99601 /* Module.swift */,
+				4DA1F63C2941E0B500150F2C /* Provision.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4DB86A36293D18870044F7FB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DB86A37293D18910044F7FB /* TankopediaService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DB86A39293D19C60044F7FB /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				4D07A974293F495800794348 /* Cells */,
+				4D07A972293F47E200794348 /* DiscoverCell.swift */,
+				4D07A970293F479200794348 /* DiscoverItem.swift */,
+				4D07A96E293F477300794348 /* DiscoverSection.swift */,
+				4D2FFCE0293F543600FB0A98 /* TankopediaDiscoverViewController+UICollectionViewDelegate.swift */,
+				4D3742F7293E3437006BC562 /* TankopediaDiscoverViewController.swift */,
+				4D3742F5293E3401006BC562 /* TankopediaDiscoverViewModel.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		4DE3633A29411B2400E99601 /* Siege */ = {
+			isa = PBXGroup;
+			children = (
+				4DE3633F29411BE400E99601 /* SiegeDetailsView.storyboard */,
+				4DE3633D29411B8600E99601 /* SiegeDetailsViewController.swift */,
+				4DE3633B29411B4500E99601 /* SiegeDetailsViewModel.swift */,
+			);
+			path = Siege;
+			sourceTree = "<group>";
+		};
+		4DE3634129411D5B00E99601 /* Rapid */ = {
+			isa = PBXGroup;
+			children = (
+				4DE3634629411DE500E99601 /* RapidDetailsView.storyboard */,
+				4DE3634429411D9600E99601 /* RapidDetailsViewController.swift */,
+				4DE3634229411D6D00E99601 /* RapidDetailsViewModel.swift */,
+			);
+			path = Rapid;
+			sourceTree = "<group>";
+		};
+		4DE363482941225E00E99601 /* Crew */ = {
+			isa = PBXGroup;
+			children = (
+				4DE3634D2941233600E99601 /* CrewDetailsView.storyboard */,
+				4DE3634B294122E000E99601 /* CrewDetailsViewController.swift */,
+				4DE363492941229C00E99601 /* CrewDetailsViewModel.swift */,
+			);
+			path = Crew;
+			sourceTree = "<group>";
+		};
+		4DE363502941283500E99601 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4DE3635E29412F0D00E99601 /* ModuleDetailsView.storyboard */,
+				4DE3635C29412E8C00E99601 /* ModuleDetailsViewController.swift */,
+				4DE3635329412A1E00E99601 /* ModuleDetailsViewModel.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4DE3635529412AF200E99601 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4DE3635A29412C4600E99601 /* ModulesDetailsView.storyboard */,
+				4DE3635829412BE700E99601 /* ModulesDetailsViewController.swift */,
+				4DE3635629412B1500E99601 /* ModulesDetailsViewModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4DE3639129413E7500E99601 /* Provisions */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1F6452941EB9500150F2C /* ProvisionsDetailsView.storyboard */,
+				4DA1F6432941EB4800150F2C /* ProvisionsDetailsViewController.swift */,
+				4DA1F6412941EABD00150F2C /* ProvisionsDetailsViewModel.swift */,
+			);
+			path = Provisions;
+			sourceTree = "<group>";
+		};
+		4DEE83C82940C37800B3ECD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE83CB2940C3BB00B3ECD3 /* DetailsIconCell.xib */,
+				4DEE83C92940C38700B3ECD3 /* DetailsIconCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4DEE83CD2940CF3F00B3ECD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE83D22940CF7600B3ECD3 /* WICoreUIKit.framework */,
+				4DEE83CE2940CF3F00B3ECD3 /* WICoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DEEE02C293F8E8800DE7589 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4D990A082940D07B00DFE2D1 /* Ammo */,
+				4D990A112940D48100DFE2D1 /* Armor */,
+				4DE363482941225E00E99601 /* Crew */,
+				4D990A182940D6B900DFE2D1 /* Engine */,
+				4D990A1F2940D96200DFE2D1 /* Gun */,
+				4DE363502941283500E99601 /* Module */,
+				4DE3635529412AF200E99601 /* Modules */,
+				4DA1F6472941FCD700150F2C /* Provision */,
+				4DE3639129413E7500E99601 /* Provisions */,
+				4D990A262940DDA500DFE2D1 /* Radio */,
+				4DE3634129411D5B00E99601 /* Rapid */,
+				4DE3633A29411B2400E99601 /* Siege */,
+				4D3A5A8829410A7D00BB4981 /* Suspension */,
+				4D3A5A8F29410FEB00BB4981 /* Turret */,
+				4D990A072940D05B00DFE2D1 /* Vehicle */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DB86A21293D17E50044F7FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB86A2A293D17E50044F7FB /* WITankopediaKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DB86A25293D17E50044F7FB /* WITankopediaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DB86A2D293D17E50044F7FB /* Build configuration list for PBXNativeTarget "WITankopediaKit" */;
+			buildPhases = (
+				4DB86A21293D17E50044F7FB /* Headers */,
+				4DB86A22293D17E50044F7FB /* Sources */,
+				4DB86A23293D17E50044F7FB /* Frameworks */,
+				4DB86A24293D17E50044F7FB /* Resources */,
+				4D9909F52940D01000DFE2D1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WITankopediaKit;
+			packageProductDependencies = (
+			);
+			productName = WITankopediaKit;
+			productReference = 4DB86A26293D17E50044F7FB /* WITankopediaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DB86A1D293D17E50044F7FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4DB86A25293D17E50044F7FB = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 4DB86A20293D17E50044F7FB /* Build configuration list for PBXProject "WITankopediaKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DB86A1C293D17E50044F7FB;
+			packageReferences = (
+			);
+			productRefGroup = 4DB86A27293D17E50044F7FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DB86A25293D17E50044F7FB /* WITankopediaKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DB86A24293D17E50044F7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA1F64D2941FD8E00150F2C /* ProvisionDetailsView.storyboard in Resources */,
+				4DE3634729411DE500E99601 /* RapidDetailsView.storyboard in Resources */,
+				4DE3635B29412C4600E99601 /* ModulesDetailsView.storyboard in Resources */,
+				4D990A0E2940D1D600DFE2D1 /* AmmoDetailsView.storyboard in Resources */,
+				4DEE83C329409EDC00B3ECD3 /* VehicleDetailsView.storyboard in Resources */,
+				4D990A172940D5E900DFE2D1 /* ArmorDetailsView.storyboard in Resources */,
+				4D990A252940DA0B00DFE2D1 /* GunDetailsView.storyboard in Resources */,
+				4DE3634029411BE400E99601 /* SiegeDetailsView.storyboard in Resources */,
+				4D990A2C2940DE6F00DFE2D1 /* RadioDetailsView.storyboard in Resources */,
+				4D3A5A952941135100BB4981 /* TurretDetailsView.storyboard in Resources */,
+				4D07A978293F498200794348 /* DiscoverChipCell.xib in Resources */,
+				4DE3635F29412F0D00E99601 /* ModuleDetailsView.storyboard in Resources */,
+				4DA1F6462941EB9500150F2C /* ProvisionsDetailsView.storyboard in Resources */,
+				4D2FFCE5293F5CD100FB0A98 /* DiscoverVehicleCell.xib in Resources */,
+				4D990A1E2940D75700DFE2D1 /* EngineDetailsView.storyboard in Resources */,
+				4D3A5A8E29410BDF00BB4981 /* SuspensionDetailsView.storyboard in Resources */,
+				4DEE83CC2940C3BB00B3ECD3 /* DetailsIconCell.xib in Resources */,
+				4DE3634E2941233600E99601 /* CrewDetailsView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DB86A22293D17E50044F7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D990A232940D9AC00DFE2D1 /* GunDetailsViewController.swift in Sources */,
+				4D07A96F293F477300794348 /* DiscoverSection.swift in Sources */,
+				4D990A152940D59300DFE2D1 /* ArmorDetailsViewController.swift in Sources */,
+				4D990A0A2940D08400DFE2D1 /* AmmoDetailsViewModel.swift in Sources */,
+				4DE3634A2941229C00E99601 /* CrewDetailsViewModel.swift in Sources */,
+				4D3A5A932941127E00BB4981 /* TurretDetailsViewController.swift in Sources */,
+				4DA1F63D2941E0B500150F2C /* Provision.swift in Sources */,
+				4D990A0C2940D18E00DFE2D1 /* AmmoDetailsViewController.swift in Sources */,
+				4DEE83C129409D3200B3ECD3 /* VehicleDetailsViewModel.swift in Sources */,
+				4DEE83C529409EE300B3ECD3 /* VehicleDetailsViewController.swift in Sources */,
+				4DEE83CA2940C38700B3ECD3 /* DetailsIconCell.swift in Sources */,
+				4DC9C5BC293D353600A69D1E /* Vehicle.swift in Sources */,
+				4DE3634529411D9600E99601 /* RapidDetailsViewController.swift in Sources */,
+				4D990A212940D96C00DFE2D1 /* GunDetailsViewModel.swift in Sources */,
+				4DE3634C294122E000E99601 /* CrewDetailsViewController.swift in Sources */,
+				4D990A132940D4BB00DFE2D1 /* ArmorDetailsViewModel.swift in Sources */,
+				4D3A5A8C29410B2200BB4981 /* SuspensionDetailsViewController.swift in Sources */,
+				4DB86A44293D1CCA0044F7FB /* TankopediaInformation.swift in Sources */,
+				4D07A971293F479200794348 /* DiscoverItem.swift in Sources */,
+				4D2FFCE1293F543600FB0A98 /* TankopediaDiscoverViewController+UICollectionViewDelegate.swift in Sources */,
+				4D07A973293F47E200794348 /* DiscoverCell.swift in Sources */,
+				4D990A282940DDB500DFE2D1 /* RadioDetailsViewModel.swift in Sources */,
+				4DA1F6422941EABD00150F2C /* ProvisionsDetailsViewModel.swift in Sources */,
+				4DE3635D29412E8C00E99601 /* ModuleDetailsViewController.swift in Sources */,
+				4DE3635729412B1500E99601 /* ModulesDetailsViewModel.swift in Sources */,
+				4D3742F6293E3401006BC562 /* TankopediaDiscoverViewModel.swift in Sources */,
+				4D2FFCE3293F5CC800FB0A98 /* DiscoverVehicleCell.swift in Sources */,
+				4D3A5A91294111F600BB4981 /* TurretDetailsViewModel.swift in Sources */,
+				4DE3633C29411B4500E99601 /* SiegeDetailsViewModel.swift in Sources */,
+				4DA1F6492941FCE800150F2C /* ProvisionDetailsViewModel.swift in Sources */,
+				4D990A2A2940DDFA00DFE2D1 /* RadioDetailsViewController.swift in Sources */,
+				4D3742F8293E3437006BC562 /* TankopediaDiscoverViewController.swift in Sources */,
+				4DE3634329411D6D00E99601 /* RapidDetailsViewModel.swift in Sources */,
+				4DB86A33293D18140044F7FB /* WITankopediaKit.swift in Sources */,
+				4DA1F6442941EB4800150F2C /* ProvisionsDetailsViewController.swift in Sources */,
+				4DE363522941288A00E99601 /* Module.swift in Sources */,
+				4D07A976293F496000794348 /* DiscoverChipCell.swift in Sources */,
+				4DE3633E29411B8600E99601 /* SiegeDetailsViewController.swift in Sources */,
+				4DB86A38293D18910044F7FB /* TankopediaService.swift in Sources */,
+				4DE3635429412A1E00E99601 /* ModuleDetailsViewModel.swift in Sources */,
+				4D990A1C2940D71900DFE2D1 /* EngineDetailsViewController.swift in Sources */,
+				4D3A5A8A29410A8D00BB4981 /* SuspensionDetailsViewModel.swift in Sources */,
+				4D990A1A2940D6C500DFE2D1 /* EngineDetailsViewModel.swift in Sources */,
+				4DE3635929412BE800E99601 /* ModulesDetailsViewController.swift in Sources */,
+				4DA1F64B2941FD1800150F2C /* ProvisionDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DB86A2B293D17E50044F7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DB86A2C293D17E50044F7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DB86A2E293D17E50044F7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P957785596;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artes.WITankopediaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DB86A2F293D17E50044F7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P957785596;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artes.WITankopediaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DB86A20293D17E50044F7FB /* Build configuration list for PBXProject "WITankopediaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB86A2B293D17E50044F7FB /* Debug */,
+				4DB86A2C293D17E50044F7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DB86A2D293D17E50044F7FB /* Build configuration list for PBXNativeTarget "WITankopediaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB86A2E293D17E50044F7FB /* Debug */,
+				4DB86A2F293D17E50044F7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DB86A1D293D17E50044F7FB /* Project object */;
+}
